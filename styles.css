@@ -1,0 +1,40 @@
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.select-menu {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
+  z-index: 7000;
+  display: none;
+  overflow-y: scroll;
+  max-height: 175px;
+  padding: 6px 0;
+}
+
+.select-menu a {
+  padding: 0 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  line-height: 2.1em;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.select-menu > a:hover {
+  border-left: 1px solid #e47911;
+  border-top-color: #e7e7e7;
+  border-bottom-color: #e7e7e7;
+}
+.select-menu > a.selected {
+  border-left: 1px solid #e47911;
+  border-top-color: #e7e7e7;
+  border-bottom-color: #e7e7e7;
+}
